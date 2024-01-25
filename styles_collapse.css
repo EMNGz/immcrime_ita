@@ -4,7 +4,7 @@
     margin-top: 10px;
   }
 
-  .informationcontainer /* คอนเทนด้านใน */ {
+  .informationcontainer /* คอนเทนด้านในที่ซ่อน */ {
     text-align: center;
     padding: 0px;
     max-width: 100%;
@@ -18,7 +18,10 @@
 
   .custom-text {
     text-align: left;
-    padding-left: 4%; 
+    padding-left: 2%; 
+    font-size: 100%; /* ให้ขนาดไอคอนเท่ากับขนาดของข้อความ */
+  vertical-align: middle;
+  
   }
 
   .custom-btn {
@@ -30,20 +33,22 @@
 
   .green-circle /* icon วงกลมสีเขียว */ {
     color: green;
-    margin-top: 10px;
-    margin-right: 5px;
-    vertical-align: middle;
-    width: auto;
-    height: auto;
+    font-size: 7px;
+   height: 100%;
+   
+    align-items: center; 
+    padding-right: 10px;
   }
   .headcontainer /*หัวชื่อ */ {
     text-align: center;
     padding: 20px;
     max-width: 100%;
     margin: auto;
-    display: flex;
+    
     flex-direction: column;
+    display: flex;
     align-items: center; 
+    
     justify-content: center;
     color: white;
     background-color: #3696C6;
@@ -81,3 +86,5 @@
     box-sizing: border-box;
     border-radius: 13px;
 }
+
+
