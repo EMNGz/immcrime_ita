@@ -1,0 +1,127 @@
+/* สไตล์ของแถวข้อความ */
+.accordion {
+  background-color: #FFFAFA;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  border-radius: 13px;
+  position: relative;
+  padding-right: 30px;
+  transition: background-color 0.3s; /* เพิ่ม transition สำหรับการเปลี่ยนแปลงสีพื้นหลัง */
+  overflow: hidden; /* เพิ่มคำสั่งนี้ */
+  text-align: left;
+}
+
+.cover /* กรอบสีเขียวล้อมรอบ */ {
+  border: 1px solid #654321;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden; /* เพิ่มคำสั่งนี้ */
+}
+.custom-text {
+  text-align: left;
+  padding-left: 4%; /* Optional: Add padding for better visual appearance */
+}
+.custom-circle {
+  color: green;
+  margin-right: 5px; /* Optional: Add margin for better spacing */
+} 
+/* ซ่อนเนื้อหา */
+.content {
+  color: black;
+  text-align: left; /* เพิ่มคำสั่งนี้ */
+  padding-left: 1000px;
+  transition: max-height 0.3s ease-out; /* เพิ่ม transition สำหรับการแสดง/ซ่อน เพื่อมีการเปลี่ยนแปลงอย่างนุ่มนวล */
+  max-height: 0; /* เพิ่มคำสั่งนี้ */
+  overflow: hidden; /* เพิ่มคำสั่งนี้ */
+}
+
+/* เพิ่มสไตล์เมื่อ content ถูกแสดง (expanded) */
+.content.collapse.show {
+  max-height: 500px; /* ปรับสูงสุดตามความต้องการ */
+  transition: max-height 0.3s ease-in-out; /* เพิ่ม transition สำหรับการแสดง/ซ่อน เพื่อมีการเปลี่ยนแปลงอย่างนุ่มนวล */
+}
+
+
+.accordion.active-button {
+  color: green;
+}
+
+/* icon บวกลบ */
+.accordion-icon {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+.green-circle /* icon วงกลมสีเขียว */ {
+  color: green;
+  margin-top: -1px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+}
+.blue-circle /* icon วงกลมฟ้า*/ {
+  color: #3696C6;
+  margin-top: -1px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+}
+/* สไตล์ของแถวข้อความ */
+body {
+  background-image: url('logo.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.headcontainer /*หัวชื่อ */ {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  color: white;
+  background-color: #3696C6;
+}
+
+.informationcontainer /* คอนเทนด้านใน */ {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  color: black;
+}
+
+.white-box /* พื้นหลังสีขาว */ {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+
+/* ปรับขนาดรูปพื้นหลังเมื่อหน้าจอเล็กลง */
+@media (max-width: 767px) {
+  body {
+    background-size: contain; /* ถ้าหน้าจอเล็กลงให้ปรับขนาดรูปให้เหมาะสม */
+  }
+}
