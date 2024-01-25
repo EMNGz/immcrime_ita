@@ -14,6 +14,7 @@
 </head>
 
 <body>
+ 
   <div class="headcontainer">
     <br>การประเมินคุณธรรมและความโปร่งใส่ในการดำเนินงานของหน่วยงานภาครัฐ</br>
     (INTEGRITY AND TRANSPARENCY ASSESSMENT: ITA)
@@ -65,35 +66,7 @@
     </div>
   </div>
 
-  <script>
-  var accordions = document.querySelectorAll(".accordion");
-
-  accordions.forEach(function (accordion) {
-    accordion.addEventListener("click", function () {
-      accordions.forEach(function (otherAccordion) {
-        if (otherAccordion !== accordion) {
-          otherAccordion.classList.remove("active-button");
-          otherAccordion.classList.remove("active-header");
-          var otherIcon = otherAccordion.querySelector('.accordion-icon i');
-          otherIcon.classList.remove('bi-dash-circle-fill');
-          otherIcon.classList.add('bi-plus-circle-fill');
-        }
-      });
-
-      this.classList.toggle("active-button");
-      this.classList.toggle("active-header");
-
-      var icon = this.querySelector('.accordion-icon i');
-      toggleIcon(icon);
-    });
-  });
-
-  function toggleIcon(icon) {
-    icon.classList.toggle('bi-dash-circle-fill');
-    icon.classList.toggle('bi-plus-circle-fill');
-  }
-</script>
-
+  
 </body>
 
 </html>

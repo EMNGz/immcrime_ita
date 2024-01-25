@@ -74,15 +74,8 @@
   width: auto;
   height: auto;
 }
-/* สไตล์ของแถวข้อความ */
-body {
-  background-image: url('logo.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
+
+
 
 .headcontainer /*หัวชื่อ */ {
   text-align: center;

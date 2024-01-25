@@ -1,0 +1,83 @@
+  div.card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .informationcontainer /* คอนเทนด้านใน */ {
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    color: black;
+  }
+
+  .custom-text {
+    text-align: left;
+    padding-left: 4%; 
+  }
+
+  .custom-btn {
+    width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+    text-align: left; /* จัดข้อความไปทางซ้าย */
+  }
+
+  
+
+  .green-circle /* icon วงกลมสีเขียว */ {
+    color: green;
+    margin-top: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+  }
+  .headcontainer /*หัวชื่อ */ {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    background-color: #3696C6;
+    
+  }
+  #accordion .card-header .btn-link {
+    text-decoration: none;
+    color: black ; 
+  }
+  .text-green.active {
+    color: green !important;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('logo.jpg'); /* เปลี่ยน 'your_image_url.jpg' เป็น URL ของรูปภาพที่คุณต้องการใช้ */
+    background-size: cover; /* ปรับขนาดรูปภาพให้เต็มหน้าจอ */
+    background-repeat: no-repeat; /* ไม่ซ้ำรูปภาพ */
+    background-position: center; /* จัดตำแหน่งรูปภาพที่กลางหน้าจอ */
+    background-attachment: fixed; /* ทำให้รูปภาพไม่ขยับ */
+    font-family: 'sans-serif' ; 
+  }
+  .icon-right {
+    float: right; /* ให้ไอคอนอยู่ด้านขวา */
+    margin-right: 3%; /* ระยะห่างจากด้านขวา 3% */
+  }
+
+  .white-box /* พื้นหลังสีขาว */ {
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto; /* ใช้ auto ที่ข้างซ้ายและข้างขวา */
+    display: block;   /* กำหนดให้เป็น block */
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
